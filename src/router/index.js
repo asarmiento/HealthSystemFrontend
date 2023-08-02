@@ -3,12 +3,24 @@ import HomeView from '../views/HomeView.vue'
 import HospitalsList from '../views/Hospitals/hospitalsLists.vue'
 import HospitalsEdit from '../views/Hospitals/hospitalsEdit.vue'
 import HospitalsCreate from '../views/Hospitals/hospitalCreate.vue'
+<<<<<<< HEAD
 import UsersList from '../views/Users/usersLists.vue'
 import UsersEdit from '../views/Users/usersEdit.vue'
 import UsersCreate from '../views/Users/userCreate.vue'
 import VehiclesListsList from '../views/Vehicles/vehiclesLists.vue'
 import VehiclesEditsEdit from '../views/Vehicles/vehiclesEdit.vue'
 import VehiclesCreate from '../views/Vehicles/vehicleCreate.vue'
+=======
+import DriversList from '../views/Drivers/DriversList.vue'
+import DriversEdit from '../views/Drivers/DriversEdit.vue'
+import DriversCreate from '../views/Drivers/DriversCreate.vue'
+import TransfersList from '../views/Transfers/TransfersList.vue'
+import TransfersEdit from '../views/Transfers/TransfersEdit.vue'
+import TransfersCreate from '../views/Transfers/TransfersCreate.vue'
+import PatientsList from '../views/Patients/PatientsList.vue'
+import PatientsEdit from '../views/Patients/PatientsEdit.vue'
+import PatientsCreate from '../views/Patients/PatientsCreate.vue'
+>>>>>>> 9ca5735ad12e36e12305852983df66b4154edd3a
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +46,7 @@ const router = createRouter({
       component: HospitalsCreate
     },
     {
+<<<<<<< HEAD
       path: '/lista-de-Usuarios',
       name: 'Users',
       component: UsersList
@@ -65,6 +78,54 @@ const router = createRouter({
     },
     {
 
+=======
+      path: '/lista-de-conductores',
+      name: 'Drivers',
+      component:DriversList
+       
+    },
+    {
+      path: '/editar/:id/conductores',
+      name: 'editDrivers',
+      component: DriversEdit
+    },
+    {
+      path: '/registrar-conductores',
+      name: 'createDrivers',
+      component:DriversCreate
+    },
+    {
+      path: '/lista-de-transferencias',
+      name: 'Transfers',
+      component: TransfersList
+    },
+    {
+      path: '/editar/:id/transferencias',
+      name: 'editTransfers',
+      component: TransfersEdit
+    },
+    {
+      path: '/registrar-trasnferencias',
+      name: 'createTransfers',
+      component: TransfersCreate
+    },
+    {
+      path: '/Lista-de-pacientes',
+      name: 'Patients',
+      component: PatientsList
+    },
+    {
+      path: '/editar/:id/pacientes ',
+      name: 'editPatients',
+      component: PatientsEdit
+    },
+    {
+      path: '/registro-de-pacientes',
+      name: 'createPatients',
+      component: PatientsCreate
+    },
+    {
+>>>>>>> 9ca5735ad12e36e12305852983df66b4154edd3a
       path: '/about',
       name: 'about',
       // route level code-splitting
