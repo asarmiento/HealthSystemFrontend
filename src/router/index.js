@@ -73,7 +73,7 @@ const router = createRouter({
       component: PatientsList
     },
     {
-      path: '/editar/:id/pacientes ',
+      path: '/editar/:id/pacientes',
       name: 'editPatients',
       component: PatientsEdit
     },
