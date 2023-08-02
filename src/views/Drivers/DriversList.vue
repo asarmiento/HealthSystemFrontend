@@ -1,9 +1,15 @@
-<script setup>
+<template>
+  <list-Drivers/>
+</template>
 
+<script>
+  import listDrivers from './../../components/Drivers/list.vue'
+  export default {
+    name: "list",
+    component:{listDrivers}
+  }
 </script>
 
-<template>
-  <main>
-  editar de conductores
-  </main>
-</template>
+<style scoped>
+
+</style>

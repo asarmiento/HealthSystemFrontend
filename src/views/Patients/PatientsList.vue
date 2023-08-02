@@ -1,9 +1,15 @@
-<script setup>
+<template>
+  <list-Patients/>
+</template>
 
+<script>
+  import listPatients from './../../components/Patients/list.vue'
+  export default {
+    name: "list",
+    component:{listPatients}
+  }
 </script>
 
-<template>
-  <main>
-  editar de conductores
-  </main>
-</template>
+<style scoped>
+
+</style>
