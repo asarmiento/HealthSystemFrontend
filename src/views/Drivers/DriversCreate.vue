@@ -1,9 +1,15 @@
-<script setup>
+<template>
+<create-Draivers/>
+</template>
 
+<script>
+  import createDrivers from './../../components/Drivers/create.vue'
+  export default {
+    name: "create",
+    component:{createDrivers}
+  }
 </script>
 
-<template>
-  <main>
-  Crear de conductores
-  </main>
-</template>
+<style scoped>
+
+</style>
