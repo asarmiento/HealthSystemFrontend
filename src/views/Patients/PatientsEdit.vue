@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import editPatients from './../../components/Patients/edit.vue'
+  import editPatients from './../../components/patients/edit.vue'
   export default {
     name: "create",
     component:{editPatients}
