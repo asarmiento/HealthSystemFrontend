@@ -3,6 +3,15 @@ import HomeView from '../views/HomeView.vue'
 import HospitalsList from '../views/Hospitals/hospitalsLists.vue'
 import HospitalsEdit from '../views/Hospitals/hospitalsEdit.vue'
 import HospitalsCreate from '../views/Hospitals/hospitalCreate.vue'
+import DriversList from '../views/Drivers/DriversList.vue'
+import DriversEdit from '../views/Drivers/DriversEdit.vue'
+import DriversCreate from '../views/Drivers/DriversCreate.vue'
+import TransfersList from '../views/Transfers/TransfersList.vue'
+import TransfersEdit from '../views/Transfers/TransfersEdit.vue'
+import TransfersCreate from '../views/Transfers/TransfersCreate.vue'
+import PatientsList from '../views/Patients/PatientsList.vue'
+import PatientsEdit from '../views/Patients/PatientsEdit.vue'
+import PatientsCreate from '../views/Patients/PatientsCreate.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
