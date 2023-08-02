@@ -6,7 +6,7 @@
   import createPatients from './../../components/patients/create.vue'
   export default {
     name: "create",
-    component:{createPantients}
+    component:{createPatients}
   }
 </script>
 
