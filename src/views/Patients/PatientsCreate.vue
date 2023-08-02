@@ -1,9 +1,16 @@
-<script setup>
+<template>
+<create-Patients/>
+</template>
 
+<script>
+  import createPatients from './../../components/Patients/create.vue'
+  export default {
+    name: "create",
+    component:{createPatients}
+  }
 </script>
 
-<template>
-  <main>
-  Crear de conductores
-  </main>
-</template>
+<style scoped>
+
+</style>
+
