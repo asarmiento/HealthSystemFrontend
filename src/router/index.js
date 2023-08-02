@@ -28,6 +28,52 @@ const router = createRouter({
       component: HospitalsCreate
     },
     {
+      path: '/lista-de-conductores',
+      name: 'Drivers',
+      component:DriversList
+       
+    },
+    {
+      path: '/editar/:id/conductores',
+      name: 'editDrivers',
+      component: DriversEdit
+    },
+    {
+      path: '/registrar-conductores',
+      name: 'createDrivers',
+      component:DriversCreate
+    },
+    {
+      path: '/lista-de-transferencias',
+      name: 'Transfers',
+      component: TransfersList
+    },
+    {
+      path: '/editar/:id/transferencias',
+      name: 'editTransfers',
+      component: TransfersEdit
+    },
+    {
+      path: '/registrar-trasnferencias',
+      name: 'createTransfers',
+      component: TransfersCreate
+    },
+    {
+      path: '/Lista-de-pacientes',
+      name: 'Patients',
+      component: PatientsList
+    },
+    {
+      path: '/editar/:id/pacientes ',
+      name: 'editPatients',
+      component: PatientsEdit
+    },
+    {
+      path: '/registro-de-pacientes',
+      name: 'createPatients',
+      component: PatientsCreate
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
