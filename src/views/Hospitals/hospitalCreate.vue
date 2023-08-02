@@ -1,9 +1,15 @@
-<script setup>
+<template>
+<create-hospital/>
+</template>
 
+<script>
+  import createHospital from './../../components/hospitals/create.vue'
+  export default {
+    name: "create",
+    component:{createHospital}
+  }
 </script>
 
-<template>
-  <main>
-  Crear de hospitales
-  </main>
-</template>
+<style scoped>
+
+</style>
