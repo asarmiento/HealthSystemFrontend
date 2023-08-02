@@ -1,9 +1,15 @@
-<script setup>
+<template>
+  <list-hospital/>
+</template>
 
+<script>
+  import listHospital from './../../components/hospitals/list.vue'
+  export default {
+    name: "list",
+    component:{listHospital}
+  }
 </script>
 
-<template>
-  <main>
-  lista de hospitales
-  </main>
-</template>
+<style scoped>
+
+</style>
