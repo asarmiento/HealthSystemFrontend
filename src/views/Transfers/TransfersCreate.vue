@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import createTransfers from './../../components/Transfers/create.vue'
+  import createTransfers from './../../components/Transfers/Create.vue'
   export default {
     name: "create",
     component:{createTransfers}
