@@ -1,9 +1,14 @@
-<script setup>
+    <template>
+  <list-users/>
+</template>
 
+<script>
+  import listusers from './../../components/users/list.vue'
+  export default {
+    name: "list",
+    component:{listusers}
+  }
 </script>
 
-<template>
-  <main>
-  lista de usuarios
-  </main>
-</template>
+<style scoped>
+
