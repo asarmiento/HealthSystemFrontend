@@ -6,8 +6,8 @@ import HospitalsCreate from '../views/Hospitals/hospitalCreate.vue'
 import UsersList from '../views/Users/usersLists.vue'
 import UsersEdit from '../views/Users/usersEdit.vue'
 import UsersCreate from '../views/Users/userCreate.vue'
-import VehiclesListsList from '../views/Vehicles/vehiclesLists.vue'
-import VehiclesEditsEdit from '../views/Vehicles/vehiclesEdit.vue'
+import VehiclesLists from '../views/Vehicles/vehiclesLists.vue'
+import VehiclesEdits from '../views/Vehicles/vehiclesEdit.vue'
 import VehiclesCreate from '../views/Vehicles/vehicleCreate.vue'
 import DriversList from '../views/Drivers/DriversList.vue'
 import DriversEdit from '../views/Drivers/DriversEdit.vue'
@@ -51,7 +51,7 @@ const router = createRouter({
     {
       path: '/editar/:id/Usuario',
       name: 'editUser',
-      component: UsersListsEdit
+      component: UsersEdit
     },
     {
        path: '/registrar-Usuario',
@@ -59,19 +59,19 @@ const router = createRouter({
       component: UsersCreate
     },
     {
-      path: '/lista-de-vehiculos',
+      path: '/lista-de-Vehiculos',
       name: 'vehicles',
       component: VehiclesList
     },
     {
       path: '/editar/:id/vehiculos',
       name: 'editVehicle',
-      component: VehiclesEdit
+      component: VehiclesEdits
     },
     {
       path: '/registrar-vehicle',
       name: 'createVehicle',
-      component: VehiclesCreatesCreate
+      component: VehiclesCreate
     },
     {
       path: '/lista-de-conductores',
