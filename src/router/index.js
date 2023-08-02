@@ -5,7 +5,7 @@ import HospitalsEdit from '../views/Hospitals/hospitalsEdit.vue'
 import HospitalsCreate from '../views/Hospitals/hospitalCreate.vue'
 import UsersList from '../views/Users/usersLists.vue'
 import UsersEdit from '../views/Users/usersEdit.vue'
-import UsersCreate from '../views/Users/userCreate.vue'
+import UsersCreate from '../views/Users/usersCreate.vue'
 import VehiclesLists from '../views/Vehicles/vehiclesLists.vue'
 import VehiclesEdits from '../views/Vehicles/vehiclesEdit.vue'
 import VehiclesCreate from '../views/Vehicles/vehicleCreate.vue'
@@ -23,6 +23,12 @@ import PatientsCreate from '../views/Patients/PatientsCreate.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/login',
+      name: 'Login',
+      component: () => import('../views/login.vue'),
+      meta: {requiresAuth: false, sitemap:true}
+    },
     {
       path: '/',
       name: 'home',
@@ -129,5 +135,18 @@ const router = createRouter({
     }
   ]
 })
+router.beforeEach((to, from, next) => {
+  //  console.log(" to ", to.matched.some(route => route.meta.requiresAuth), " from ", from, ' store ', store.state.auth.loggedIn)
+  if (to.matched.some(route => route.meta.requiresAuth)) {
+    //    console.log(" to ", to.matched.some(route => route.meta.requiresAuth), " from ", from, ' store ', store.state.auth.loggedIn)
 
+    if (!store.state.auth.loggedIn) {
+      next('/login')
+    } else {
+      next()
+    }
+  } else {
+    next()
+  }
+})
 export default router
