@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import listPatients from './../../components/Patients/list.vue'
+  import listPatients from './../../components/patients/list.vue'
   export default {
     name: "list",
     component:{listPatients}

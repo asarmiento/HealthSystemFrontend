@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import createHospital from './../../components/hospital/create.vue'
+  import createHospital from './../../components/hospitals/create.vue'
   export default {
     name: "create",
     component:{createHospital}
