@@ -1,12 +1,12 @@
 <template>
-  <edit-hospital/>
+  <edit-users/>
 </template>
 
 <script>
-  import editHospital from './../../components/hospitals/edit.vue'
+  import editusers from './../../components/users/edit.vue'
   export default {
     name: "create",
-    component:{editHospital}
+    component:{editusers}
   }
 </script>
 
