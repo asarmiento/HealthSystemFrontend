@@ -1,9 +1,15 @@
-<script setup>
+<template>
+  <edit-vehicle/>
+</template>
 
+<script>
+  import editvehicles from './../../components/vehicle/edit.vue'
+  export default {
+    name: "create",
+    component:{editvehicles}
+  }
 </script>
 
-<template>
-  <main>
-  editar de usuarios
-  </main>
-</template>
+<style scoped>
+
+</style>

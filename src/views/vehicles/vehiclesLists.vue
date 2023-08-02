@@ -1,9 +1,15 @@
-<script setup>
+<template>
+  <list-vehicle/>
+</template>
 
+<script>
+  import listvehicles from './../../components/vehicle/list.vue'
+  export default {
+    name: "list",
+    component:{listvehicles}
+  }
 </script>
 
-<template>
-  <main>
-  lista de usuarios
-  </main>
-</template>
+<style scoped>
+
+</style>
