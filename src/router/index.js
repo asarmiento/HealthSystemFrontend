@@ -59,9 +59,9 @@ const router = createRouter({
       component: UsersCreate
     },
     {
-      path: '/lista-de-Vehiculos',
+      path: '/lista-de-vehiculos',
       name: 'vehicles',
-      component: VehiclesList
+      component: VehiclesLists
     },
     {
       path: '/editar/:id/vehiculos',
