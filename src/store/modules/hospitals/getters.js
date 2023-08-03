@@ -1,4 +1,3 @@
-
 export default {
 
 listHospitalsGetters(state){
@@ -6,18 +5,4 @@ listHospitalsGetters(state){
 }
 
 }
-<template>
-    
-</template>
 
-<script>
-    export default {
-        name: "getters"
-    }
-</script>
-
-<style scoped>
-
-</style>
-
- Stashed changes

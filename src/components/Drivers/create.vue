@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-6">
                     <label>Hospital</label>
-                    <v-select class="form-control"></v-select>
+                    <v-select class="form-control" v-model="data.hospital_id"></v-select>
                 </div>
                 <div class="col-md-12 text-center">
                     <a class="btn btn-success" @click="send">Registrar</a>
@@ -53,6 +53,10 @@
                     hospital_id: ''
                 }
             }
+        },
+        mounted(){
+            this.$store.dispatch('getHospitalsAction')
+
         },
         methods: {
             send() {

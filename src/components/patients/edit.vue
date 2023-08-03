@@ -50,7 +50,7 @@
                     name: '',
                     card: '',
                     phone: '',
-                    email: ''
+                    email: '',
                     hospital_id: '',
                 }
             }

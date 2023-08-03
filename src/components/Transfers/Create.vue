@@ -50,7 +50,7 @@
                     destination: '',
                     stretcher: '',
                     companion: '',
-                    patient_id: ''
+                    patient_id: '',
                     driver_id: '',
                     vehicle_id: ''
                 }
