@@ -1,13 +1,14 @@
-<template>
-    
-</template>
+import axios from "axios";
 
-<script>
-    export default {
-        name: "action"
+export default {
+
+    getdriversAction(context){
+       const Drivers = axios.get("/data-drivers")
+        localStorage.setItem('drivers',JSON.stringify(drivers))
+        context.commit('setdriversMutation',{
+            drivers:drivers
+        })
     }
-</script>
 
-<style scoped>
 
-</style>
+}

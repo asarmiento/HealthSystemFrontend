@@ -1,13 +1,7 @@
-<template>
-    
-</template>
+export default {
 
-<script>
-    export default {
-        name: "getters"
+    listDriversGetters(state){
+        return state.drivers
     }
-</script>
-
-<style scoped>
-
-</style>
+    
+    }

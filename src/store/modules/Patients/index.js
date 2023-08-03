@@ -6,7 +6,7 @@ import getters from './getters.js'
 export default {
 state() {
 return {
-drivers: null,
+    Patients: null,
 
 };
 },
@@ -14,3 +14,4 @@ mutations,
 actions,
 getters
 }
+s
