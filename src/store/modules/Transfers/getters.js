@@ -1,13 +1,8 @@
-<template>
-    
-</template>
+export default {
 
-<script>
-    export default {
-        name: "getters"
+    listTransfersGetters(state){
+        return state.Transfers
     }
-</script>
-
-<style scoped>
-
-</style>
+    
+    }
+    

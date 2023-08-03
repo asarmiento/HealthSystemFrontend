@@ -1,13 +1,17 @@
-<template>
-    
-</template>
 
-<script>
-    export default {
-        name: "index"
-    }
-</script>
+import mutations from './mutations.js'
+import actions from './actions.js'
+import getters from './getters.js'
 
-<style scoped>
+export default {
+state() {
+return {
+    Transfers: null,
 
-</style>
+};
+},
+mutations,
+actions,
+getters
+}
+s
