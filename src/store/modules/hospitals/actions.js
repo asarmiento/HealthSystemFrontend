@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export default {
 
     getHospitalsAction(context){
@@ -12,3 +13,15 @@ export default {
 
 
 }
+
+<script>
+    export default {
+        name: "action"
+    }
+</script>
+
+<style scoped>
+
+</style>
+
+ Stashed changes
