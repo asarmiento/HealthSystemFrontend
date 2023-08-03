@@ -1,13 +1,7 @@
-<template>
-    
-</template>
+export default {
 
-<script>
-    export default {
-        name: "mutations"
+    setDriversMutation(state,playload){
+        state.drivers = playload.drivrs
     }
-</script>
 
-<style scoped>
-
-</style>
+}
