@@ -3,28 +3,40 @@
         <div class="card-header"><h2>Actualizar de Transacciones</h2></div>
         <div class="card-body">
             <div class="row">
-                <div class="col-md-6">
-                    <label>Cédula</label>
-                    <input type="text" class="form-control" v-model="data.card">
+                 <div class="col-md-6">
+                    <label>Fecha</label>
+                    <input type="text" class="form-control" v-model="data.date">
                 </div>
                 <div class="col-md-6">
-                    <label>Nombre</label>
-                    <input type="text" class="form-control" v-model="data.name">
+                    <label>Origen</label>
+                    <input type="text" class="form-control" v-model="data.origin">
                 </div>
                 <div class="col-md-6">
-                    <label>Apellido</label>
-                    <input type="text" class="form-control" v-model="data.last_name">
+                    <label>destino</label>
+                    <input type="text" class="form-control" v-model="data.destination">
                 </div>
                 <div class="col-md-6">
-                    <label>Teléfono</label>
-                    <input type="text" class="form-control" v-model="data.phone">
+                    <label>Camilla</label>
+                    <input type="text" class="form-control" v-model="data.stretcher">
                 </div>
                 <div class="col-md-6">
-                    <label>Email</label>
-                    <input type="email" class="form-control" v-model="data.email">
+                    <label>Compañia</label>
+                    <input type="email" class="form-control" v-model="data.companion">
                 </div>
                 <div class="col-md-6">
-                    <label>Hospital</label>
+                    <label>ID del paciente</label>
+                    <input type="text" class="form-control" v-model="data.patient_id">
+                </div>
+                <div class="col-md-6">
+                    <label>identificación del conductor</label>
+                    <input type="text" class="form-control" v-model="data.driver_id">
+                </div>
+                <div class="col-md-6">
+                    <label>ID del vehículo</label>
+                    <input type="email" class="form-control" v-model="data.vehicle_id">
+                </div>
+                <div class="col-md-6">
+                    <label>Transfers</label>
                     <v-select class="form-control"></v-select>
                 </div>
                 <div class="col-md-12 text-center">

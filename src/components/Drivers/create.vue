@@ -24,7 +24,7 @@
                     <input type="email" class="form-control" v-model="data.email">
                 </div>
                 <div class="col-md-6">
-                    <label>Hospital</label>
+                    <label>Drivers</label>
                     <v-select class="form-control"></v-select>
                 </div>
                 <div class="col-md-12 text-center">
