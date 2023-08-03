@@ -1,5 +1,5 @@
 <template>
-    
+    Hola vehiculos
 </template>
 
 <script>

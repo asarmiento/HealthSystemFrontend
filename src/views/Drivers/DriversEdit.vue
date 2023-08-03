@@ -6,7 +6,7 @@
   import editDrivers from './../../components/Drivers/edit.vue'
   export default {
     name: "create",
-    component:{editDrivers}
+    components:{editDrivers}
   }
 </script>
 

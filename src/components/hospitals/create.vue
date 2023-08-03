@@ -1,5 +1,7 @@
 <template>
-    
+<div>
+    hola hospital
+</div>
 </template>
 
 <script>

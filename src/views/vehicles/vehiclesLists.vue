@@ -1,12 +1,12 @@
 <template>
-  <list-vehicle/>
+  <list-vehicles />
 </template>
 
 <script>
-  import listvehicles from './../../components/vehicles/list.vue'
+  import listVehicles from './../../components/vehicles/list.vue'
   export default {
     name: "list",
-    component:{listvehicles}
+    components:{listVehicles}
   }
 </script>
 

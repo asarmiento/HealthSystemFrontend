@@ -1,12 +1,13 @@
 <template>
-<create-hospital/>
+<create-hospital />
 </template>
 
 <script>
-  import createHospital from './../../components/hospitals/create.vue'
+  import createHospital from './../../components/hospitals/create.vue';
+  
   export default {
     name: "create",
-    component:{createHospital}
+    components:{createHospital}
   }
 </script>
 

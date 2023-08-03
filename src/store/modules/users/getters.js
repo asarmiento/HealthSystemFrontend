@@ -1,13 +1,6 @@
-<template>
-    
-</template>
 
-<script>
-    export default {
-        name: "getters"
-    }
-</script>
+export default {
 
-<style scoped>
 
-</style>
+
+}

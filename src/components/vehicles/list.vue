@@ -1,5 +1,7 @@
 <template>
-    
+<div style="background-color: red">
+    lista de vehiculos
+</div>
 </template>
 
 <script>

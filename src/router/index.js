@@ -52,7 +52,7 @@ const router = createRouter({
       path: '/registrar-hospital',
       name: 'createHospital',
       component: HospitalsCreate,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/lista-de-Usuarios',
@@ -76,7 +76,7 @@ const router = createRouter({
       path: '/lista-de-vehiculos',
       name: 'vehicles',
       component: VehiclesLists,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/editar/:id/vehiculos',
@@ -101,13 +101,13 @@ const router = createRouter({
       path: '/editar/:id/conductores',
       name: 'editDrivers',
       component: DriversEdit,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/registrar-conductores',
       name: 'createDrivers',
       component:DriversCreate,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/lista-de-transferencias',
