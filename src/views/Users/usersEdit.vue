@@ -3,12 +3,14 @@
 </template>
 
 <script>
-  import editusers from './../../components/user/edit.vue'
+  import editusers from './../../components/users/edit.vue'
   export default {
-    name: "create",
+    name: "edit",
     component:{editusers}
   }
 </script>
 
-<style scoped>
 
+   <style scoped>
+
+   </style>

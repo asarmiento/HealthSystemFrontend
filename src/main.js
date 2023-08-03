@@ -3,21 +3,19 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from 'vuex'
+import store from './store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import DataTable from 'datatables.net-vue3';
 import Select from 'datatables.net-select';
 
-import { VueSelect } from "vue-select";
 const app = createApp(App)
 
 app.use(store)
-app.use(JQuery)
 app.use(VueAxios, axios)
 app.use(router)
-app.use(DataTable,DataTablesLib)
-app.component("v-select", VueSelect)
+app.use(DataTable,Select)
+//app.component("v-select", VueSelect)
 DataTable.use(Select);
 
 

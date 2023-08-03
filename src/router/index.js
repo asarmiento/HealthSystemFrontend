@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import store from '../store'
 import HomeView from '../views/HomeView.vue'
 import HospitalsList from '../views/Hospitals/hospitalsLists.vue'
 import HospitalsEdit from '../views/Hospitals/hospitalsEdit.vue'
@@ -32,98 +33,117 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/lista-de-hospitales',
       name: 'hospitals',
-      component: HospitalsList
+      component: HospitalsList,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/editar/:id/hospital',
       name: 'editHospital',
-      component: HospitalsEdit
+      component: HospitalsEdit,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/registrar-hospital',
       name: 'createHospital',
-      component: HospitalsCreate
+      component: HospitalsCreate,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/lista-de-Usuarios',
       name: 'Users',
-      component: UsersList
+      component: UsersList,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/editar/:id/Usuario',
       name: 'editUser',
-      component: UsersEdit
+      component: UsersEdit,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
        path: '/registrar-Usuario',
       name: 'createUser',
-      component: UsersCreate
+      component: UsersCreate,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/lista-de-vehiculos',
       name: 'vehicles',
-      component: VehiclesLists
+      component: VehiclesLists,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/editar/:id/vehiculos',
       name: 'editVehicle',
-      component: VehiclesEdits
+      component: VehiclesEdits,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/registrar-vehicle',
       name: 'createVehicle',
-      component: VehiclesCreate
+      component: VehiclesCreate,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/lista-de-conductores',
       name: 'Drivers',
-      component:DriversList
+      component:DriversList,
+      meta: {requiresAuth: true, sitemap:true}
        
     },
     {
       path: '/editar/:id/conductores',
       name: 'editDrivers',
-      component: DriversEdit
+      component: DriversEdit,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/registrar-conductores',
       name: 'createDrivers',
-      component:DriversCreate
+      component:DriversCreate,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/lista-de-transferencias',
       name: 'Transfers',
-      component: TransfersList
+      component: TransfersList,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/editar/:id/transferencias',
       name: 'editTransfers',
-      component: TransfersEdit
+      component: TransfersEdit,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/registrar-trasnferencias',
       name: 'createTransfers',
-      component: TransfersCreate
+      component: TransfersCreate,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/Lista-de-pacientes',
       name: 'Patients',
-      component: PatientsList
+      component: PatientsList,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/editar/:id/pacientes',
       name: 'editPatients',
-      component: PatientsEdit
+      component: PatientsEdit,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/registro-de-pacientes',
       name: 'createPatients',
-      component: PatientsCreate
+      component: PatientsCreate,
+      meta: {requiresAuth: true, sitemap:true}
     },
     {
       path: '/about',
@@ -136,9 +156,9 @@ const router = createRouter({
   ]
 })
 router.beforeEach((to, from, next) => {
-  //  console.log(" to ", to.matched.some(route => route.meta.requiresAuth), " from ", from, ' store ', store.state.auth.loggedIn)
+    console.log(" to ", to.matched.some(route => route.meta.requiresAuth), " from ", from, ' store ', store.state.auth.loggedIn)
   if (to.matched.some(route => route.meta.requiresAuth)) {
-    //    console.log(" to ", to.matched.some(route => route.meta.requiresAuth), " from ", from, ' store ', store.state.auth.loggedIn)
+        console.log(" to ", to.matched.some(route => route.meta.requiresAuth), " from ", from, ' store ', store.state.auth.loggedIn)
 
     if (!store.state.auth.loggedIn) {
       next('/login')

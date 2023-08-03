@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import editvehicles from './../../components/vehicle/edit.vue'
+  import editvehicles from './../../components/vehicles/edit.vue'
   export default {
     name: "create",
     component:{editvehicles}

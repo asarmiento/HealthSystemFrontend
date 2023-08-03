@@ -1,15 +1,17 @@
+import {createLogger, createStore} from 'vuex'
+
+import hospitalModules from "./modules/hospitals"
+import authModules from "./modules/auth"
+
+
+
 // Create a new store instance.
 const store = createStore({
-    state () {
-        return {
-            count: 0
-        }
+    modules: {
+        hospitals:hospitalModules,
+        auth:authModules,
     },
-    mutations: {
-        increment (state) {
-            state.count++
-        }
-    }
+    plugins: [createLogger()]
 })
 
 export default store

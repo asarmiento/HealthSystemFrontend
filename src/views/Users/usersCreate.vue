@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import createUser from './../../components/User/create.vue'
+  import createUser from './../../components/users/create.vue'
   export default {
     name: "create",
     component:{createUser}
@@ -12,3 +12,4 @@
 
 <style scoped>
 
+</style>

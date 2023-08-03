@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import listvehicles from './../../components/vehicle/list.vue'
+  import listvehicles from './../../components/vehicles/list.vue'
   export default {
     name: "list",
     component:{listvehicles}
