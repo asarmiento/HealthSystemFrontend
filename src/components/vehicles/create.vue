@@ -4,27 +4,27 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6">
-                    <label>Cédula</label>
-                    <input type="text" class="form-control" v-model="data.card">
+                    <label>Placa</label>
+                    <input type="text" class="form-control" v-model="data.plate">
                 </div>
                 <div class="col-md-6">
-                    <label>Nombre</label>
-                    <input type="text" class="form-control" v-model="data.name">
+                    <label>Tipo</label>
+                    <input type="text" class="form-control" v-model="data.type">
                 </div>
                 <div class="col-md-6">
-                    <label>Apellido</label>
-                    <input type="text" class="form-control" v-model="data.last_name">
+                    <label>Tipo_completo</label>
+                    <input type="text" class="form-control" v-model="data.full_type">
                 </div>
                 <div class="col-md-6">
-                    <label>Teléfono</label>
-                    <input type="text" class="form-control" v-model="data.phone">
+                    <label>Año</label>
+                    <input type="text" class="form-control" v-model="data.year">
                 </div>
                 <div class="col-md-6">
-                    <label>Email</label>
-                    <input type="email" class="form-control" v-model="data.email">
+                    <label>hospital_id</label>
+                    <input type="text" class="form-control" v-model="data.hospital_id">
                 </div>
                 <div class="col-md-6">
-                    <label>Hospital</label>
+                    <label>Vehiculos</label>
                     <v-select class="form-control"></v-select>
                 </div>
                 <div class="col-md-12 text-center">

@@ -4,27 +4,19 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6">
-                    <label>Cédula</label>
-                    <input type="text" class="form-control" v-model="data.card">
-                </div>
-                <div class="col-md-6">
                     <label>Nombre</label>
                     <input type="text" class="form-control" v-model="data.name">
                 </div>
                 <div class="col-md-6">
-                    <label>Apellido</label>
-                    <input type="text" class="form-control" v-model="data.last_name">
-                </div>
-                <div class="col-md-6">
-                    <label>Teléfono</label>
-                    <input type="text" class="form-control" v-model="data.phone">
+                    <label>Contraseña</label>
+                    <input type="text" class="form-control" v-model="data.password">
                 </div>
                 <div class="col-md-6">
                     <label>Email</label>
                     <input type="email" class="form-control" v-model="data.email">
                 </div>
                 <div class="col-md-6">
-                    <label>Hospital</label>
+                    <label>Usuario</label>
                     <v-select class="form-control"></v-select>
                 </div>
                 <div class="col-md-12 text-center">
