@@ -1,16 +1,16 @@
    <template>
     <view-layout>
-      <edit-user/>
+      <edit-User/>
     </view-layout>
   </template>
 
 
 <script>
-  import editUsers from './../../components/users/edit.vue'
+  import editUsers from './../../components/Users/edit.vue'
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "edit",
-    components:{editusers,viewLayout}
+    components:{editUsers,viewLayout}
   }
 </script>
 
