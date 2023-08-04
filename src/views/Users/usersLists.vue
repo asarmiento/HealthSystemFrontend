@@ -6,11 +6,11 @@
 
 
 <script>
-  import listusers from './../../components/Users/list.vue'
+  import listUsers from './../../components/users/list.vue'
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "list",
-    components:{listusers,viewLayout}
+    components:{listUsers,viewLayout}
   }
 </script>
 
