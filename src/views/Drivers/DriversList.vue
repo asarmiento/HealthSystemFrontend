@@ -1,8 +1,7 @@
 <template>
   <view-layout>
-    <list-Drivers/>
+    <list-drivers />
   </view-layout>
-  
 </template>
 
 <script>
@@ -10,7 +9,7 @@
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "list",
-    component:{listDrivers, viewLayout}
+    components:{listDrivers, viewLayout}
   }
 </script>
 

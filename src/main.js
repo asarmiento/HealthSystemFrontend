@@ -18,7 +18,6 @@ app.use(DataTable,Select)
 //app.component("v-select", VueSelect)
 DataTable.use(Select);
 
-
 axios.defaults.headers.common.Accept='application/json';
 axios.defaults.baseURL ='http://healthsystem.test/api';
 
