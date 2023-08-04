@@ -6,7 +6,7 @@
 
 
 <script>
-  import editusers from './../../components/users/edit.vue'
+  import editUsers from './../../components/users/edit.vue'
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "edit",

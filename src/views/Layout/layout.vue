@@ -4,15 +4,13 @@
             <section id="logo-page"></section>
             <section id="banner"><h1>Control de traslados C.C.S.S.</h1></section>
 
-            <section id="logo-csss">
-                </section>
         </header>
         <nav class="navbar" >
             <ul>
             <li><RouterLink to="/">Inicio</RouterLink></li>
                 <li> <RouterLink to="/Lista-de-pacientes">Pacientes</RouterLink></li>
                 <li> <RouterLink to="/lista-de-hospitales">Hospitales</RouterLink></li>
-                <li> <RouterLink to="/lista-de-Usuarios">Usuarios</RouterLink></li>
+                <li> <RouterLink to="/lista-de-usuarios">Usuarios</RouterLink></li>
                 <li> <RouterLink to="/lista-de-vehiculos">Vehiculos</RouterLink></li>
                 <li> <RouterLink to="/lista-de-conductores">Conductores</RouterLink></li>
                 <li> <RouterLink to="/lista-de-transferencias">Traslados</RouterLink></li>
@@ -38,8 +36,6 @@
     }
 </script>
 
+<style scoped>
 
-<style lang="scss" scoped>
-
-    @import "./../../assets/style.scss";
 </style>

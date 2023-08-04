@@ -67,7 +67,7 @@ const router = createRouter({
       meta: {requiresAuth: false, sitemap:true}
     },
     {
-       path: '/registrar-Usuario',
+       path: '/Registrar-Usuarios',
       name: 'createUser',
       component: UsersCreate,
       meta: {requiresAuth: false, sitemap:true}

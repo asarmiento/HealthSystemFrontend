@@ -1,16 +1,16 @@
     <template>
       <view-layout>
-        <list-users/>
+        <lists-Users/>
       </view-layout>
     </template>
 
 
 <script>
-  import listUsers from './../../components/users/list.vue'
+  import listsUsers from './../../components/Users/list.vue'
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "list",
-    components:{listUsers,viewLayout}
+    components:{listsUsers,viewLayout}
   }
 </script>
 

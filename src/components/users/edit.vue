@@ -32,7 +32,7 @@
     import Swal from 'sweetalert2'
 
     export default {
-        name: "createDrivers",
+        name: "createUsers",
         components: {vSelect, Swal},
         data() {
             return {

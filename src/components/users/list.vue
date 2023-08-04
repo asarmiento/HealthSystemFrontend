@@ -19,7 +19,7 @@
         methods:{
             table(){
                 this.$nextTick(() => {
-                    $('#tablaDrivers').dataTable({
+                    $('#tablaUsers').dataTable({
                         "order": [[ 0, "desc" ]],
                         responsive: true,
                         dom: '<"table-buttons"B>flrt<bottam>ip',
@@ -27,9 +27,9 @@
                             {
                                 text: 'Registrar Usuario',
                                 action: function ( dt ) {
-                                    document.location = '/registrar-conductores'
+                                    document.location = '/registrar-Usuarios'
                                 },
-                                "titleAttr":"Registrar Conductor",
+                                "titleAttr":"Registrar Usuarios",
                                 "className": "btn btn-primary ml-5"
                             }
                         ],
