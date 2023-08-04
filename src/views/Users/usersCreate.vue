@@ -1,6 +1,6 @@
     <template>
       <view-layout>
-        <create-User/>
+        <create-User />
       </view-layout>
 </template>
 

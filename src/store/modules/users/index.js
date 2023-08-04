@@ -6,7 +6,7 @@ import getters from './getters.js'
 export default {
 state() {
 return {
-hospitals: null,
+users: null,
 
 };
 },

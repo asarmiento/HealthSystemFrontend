@@ -1,22 +1,40 @@
 <template>
-    <table id="tablaUsers" class="display">
+    <table id="tablaUsers" class="display table dataTable">
         <thead>
         <tr>
             <th>Nombre</th>
-            <th>Contraseña</th>
             <th>Email</th>
         </tr>
         </thead>
+        <tbody>
+        <tr v-for="user in dataUsers">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+        </tbody>
     </table>
 </template>
 
 <script>
     export default {
         name: "list",
+        data(){
+            return{
+                dataUsers:[]
+            }
+        },
         mounted(){
           this.table()
+          this.getDataUsers()
+            this.$store.dispatch('tryUsersAction')
+            this.dataUsers = this.$store.getters.listUsersGetters
+            console.log(this.dataUsers)
         },
         methods:{
+
+            getDataUsers(){
+              this.$store.dispatch('getUsersAction')
+            },
             table(){
                 this.$nextTick(() => {
                     $('#tablaUsers').dataTable({
