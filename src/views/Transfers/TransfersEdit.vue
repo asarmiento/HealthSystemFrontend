@@ -10,7 +10,7 @@
   import viewLayout from './../Laoyut/layout.vue'
   export default {
     name: "create",
-    component:{editTransfers,viewLayout}
+    components:{editTransfers,viewLayout}
   }
 </script>
 

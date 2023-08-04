@@ -10,7 +10,7 @@
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "list",
-    component:{listTransfers,viewLayout}
+    components:{listTransfers,viewLayout}
   }
 </script>
 
