@@ -1,24 +1,40 @@
 <template>
-    <table id="tablaVehicles" class="display">
+    <table id="tablaVehicles" class="display table dataTable">
         <thead>
         <tr>
-            <th>Placa</th>
-            <th>Modelo</th>
-            <th>Tipo_completo</th>
-            <th>Año</th>
-            <th>Hospital</th>
+            <th>Nombre</th>
+            <th>Email</th>
         </tr>
         </thead>
+        <tbody>
+        <tr v-for="vehicle in dataVehicles">
+            <td>{{vehicle.name}}</td>
+            <td>{{vehicle.email}}</td>
+        </tr>
+        </tbody>
     </table>
 </template>
 
 <script>
     export default {
         name: "list",
+        data(){
+            return{
+                dataVehicles:[]
+            }
+        },
         mounted(){
           this.table()
+          this.getDataVehicles()
+            this.$store.dispatch('tryVehiclesAction')
+            this.dataVehicles = this.$store.getters.listVehiclesGetters
+            console.log(this.dataVehicles)
         },
         methods:{
+
+            getDataVehicles(){
+              this.$store.dispatch('getVehiclesAction')
+            },
             table(){
                 this.$nextTick(() => {
                     $('#tablaVehicles').dataTable({
@@ -27,11 +43,11 @@
                         dom: '<"table-buttons"B>flrt<bottam>ip',
                         buttons: [
                             {
-                                text: 'Registrar Vehiculo',
+                                text: 'Registrar Vehiculos',
                                 action: function ( dt ) {
-                                    document.location = '/registrar-conductores'
+                                    document.location = '/registrar-Vehiculos'
                                 },
-                                "titleAttr":"Registrar Conductor",
+                                "titleAttr":"Registrar Vehiculos",
                                 "className": "btn btn-primary ml-5"
                             }
                         ],
