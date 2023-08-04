@@ -7,10 +7,6 @@
                     <label>Nombre</label>
                     <input type="text" class="form-control" v-model="data.name">
                 </div>
-                <div class="col-md-6">
-                    <label>Hospital</label>
-                    <v-select class="form-control"></v-select>
-                </div>
                 <div class="col-md-12 text-center">
                     <a class="btn btn-success" @click="send">Registrar</a>
                 </div>

@@ -24,10 +24,7 @@
                     <input type="email" class="form-control" v-model="data.email">
                 </div>
                 <div class="col-md-6">
-
-                    <label>Drivers</label>
-                    <v-select class="form-control"></v-select>
-                    <label>Hospital</label>
+                    <label>identificacion del Hospital</label>
                     <v-select class="form-control" v-model="data.hospital_id"></v-select>
                 </div>
                 <div class="col-md-12 text-center">
