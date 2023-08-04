@@ -1,5 +1,5 @@
 <template>
-    <DataTable id="tablaDrivers" class="display">
+    <table id="tablaTransfers" class="display">
         <thead>
         <tr>
             <th>Fecha</th>
@@ -10,9 +10,9 @@
             <th>Id del paciente</th>
             <th>idetificacion del conductor</th>
             <th>idetificacion del vehículo</th>
-        </tr>
+       </tr>
         </thead>
-    </DataTable>
+    </table>
 </template>
 
 <script>

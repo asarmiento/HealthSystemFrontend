@@ -1,11 +1,11 @@
 <template>
-    <DataTable id="tablaDrivers" class="display">
+    <table id="tablaHospitals" class="display">
         <thead>
         <tr>
             <th>Nombre</th>
         </tr>
         </thead>
-    </DataTable>
+    </table>
 </template>
 
 <script>

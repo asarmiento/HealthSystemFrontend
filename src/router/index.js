@@ -40,16 +40,16 @@ const router = createRouter({
       path: '/lista-de-hospitales',
       name: 'hospitals',
       component: HospitalsList,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/editar/:id/hospital',
       name: 'editHospital',
       component: HospitalsEdit,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
-      path: '/registrar-hospital',
+      path: '/Registrar-Hospitales',
       name: 'createHospital',
       component: HospitalsCreate,
       meta: {requiresAuth: false, sitemap:true}
@@ -113,37 +113,37 @@ const router = createRouter({
       path: '/lista-de-transferencias',
       name: 'Transfers',
       component: TransfersList,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/editar/:id/transferencias',
       name: 'editTransfers',
       component: TransfersEdit,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
-      path: '/registrar-trasnferencias',
+      path: '/registrar-transferencias',
       name: 'createTransfers',
       component: TransfersCreate,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/Lista-de-pacientes',
       name: 'Patients',
       component: PatientsList,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/editar/:id/pacientes',
       name: 'editPatients',
       component: PatientsEdit,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
-      path: '/registro-de-pacientes',
+      path: '/Registrar-Pasientes',
       name: 'createPatients',
       component: PatientsCreate,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/about',
