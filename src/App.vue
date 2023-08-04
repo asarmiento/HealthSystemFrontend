@@ -8,5 +8,4 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style lang="scss" scoped>
-@import "assets/style.scss";
 </style>
