@@ -55,22 +55,22 @@ const router = createRouter({
       meta: {requiresAuth: false, sitemap:true}
     },
     {
-      path: '/lista-de-Usuarios',
+      path: '/lista-de-usuarios',
       name: 'Users',
       component: UsersList,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/editar/:id/Usuario',
       name: 'editUser',
       component: UsersEdit,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
        path: '/registrar-Usuario',
       name: 'createUser',
       component: UsersCreate,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/lista-de-vehiculos',

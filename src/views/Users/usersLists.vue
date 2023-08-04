@@ -6,7 +6,7 @@
 
 
 <script>
-  import listusers from './../../components/users/list.vue'
+  import listusers from './../../components/Users/list.vue'
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "list",
