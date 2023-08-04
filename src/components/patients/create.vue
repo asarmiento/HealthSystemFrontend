@@ -24,7 +24,7 @@
                     <input type="email" class="form-control" v-model="data.email">
                 </div>
                 <div class="col-md-6">
-                    <label>Cedula</label>
+                    <label>Celular</label>
                     <input type="email" class="form-control" v-model="data.cell">
                 </div>
                 <div class="col-md-6">
