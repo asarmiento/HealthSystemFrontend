@@ -31,10 +31,6 @@
                     <label>Identificacion del hospital</label>
                     <input type="email" class="form-control" v-model="data.hospital_id">
                 </div>
-                <div class="col-md-6">
-                    <label>Patients</label>
-                    <v-select class="form-control"></v-select>
-                </div>
                 <div class="col-md-12 text-center">
                     <a class="btn btn-success" @click="send">Actualizar</a>
                 </div>
