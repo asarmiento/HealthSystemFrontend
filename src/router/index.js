@@ -94,7 +94,7 @@ const router = createRouter({
       path: '/lista-de-conductores',
       name: 'Drivers',
       component:DriversList,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
        
     },
     {
