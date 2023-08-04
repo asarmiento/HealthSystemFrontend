@@ -15,10 +15,6 @@
                     <label>Email</label>
                     <input type="email" class="form-control" v-model="data.email">
                 </div>
-                <div class="col-md-6">
-                    <label>Usuario</label>
-                    <v-select class="form-control"></v-select>
-                </div>
                 <div class="col-md-12 text-center">
                     <a class="btn btn-success" @click="send">Registrar</a>
                 </div>

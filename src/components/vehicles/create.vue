@@ -8,7 +8,7 @@
                     <input type="text" class="form-control" v-model="data.plate">
                 </div>
                 <div class="col-md-6">
-                    <label>Tipo</label>
+                    <label>Modelo</label>
                     <input type="text" class="form-control" v-model="data.type">
                 </div>
                 <div class="col-md-6">
@@ -22,10 +22,6 @@
                 <div class="col-md-6">
                     <label>hospital_id</label>
                     <input type="text" class="form-control" v-model="data.hospital_id">
-                </div>
-                <div class="col-md-6">
-                    <label>Vehiculos</label>
-                    <v-select class="form-control"></v-select>
                 </div>
                 <div class="col-md-12 text-center">
                     <a class="btn btn-success" @click="send">Registrar</a>
