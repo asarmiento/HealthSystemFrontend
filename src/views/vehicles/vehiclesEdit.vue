@@ -1,12 +1,16 @@
 <template>
-  <edit-vehicle/>
+  <view-layout>
+    <edit-vehicle/>
+  </view-layout>
 </template>
+
 
 <script>
   import editvehicles from './../../components/vehicles/edit.vue'
+  import viewLayout from './../Layout/layout.vue'
   export default {
     name: "create",
-    component:{editvehicles}
+    component:{editvehicles,viewLayout}
   }
 </script>
 

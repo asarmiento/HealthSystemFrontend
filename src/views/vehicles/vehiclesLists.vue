@@ -1,12 +1,16 @@
 <template>
-  <list-vehicles />
+  <view-layout>
+    <list-vehicles />
+  </view-layout>
 </template>
+
 
 <script>
   import listVehicles from './../../components/vehicles/list.vue'
+  import viewLayout from './../Layout/layout.vue'
   export default {
     name: "list",
-    components:{listVehicles}
+    components:{listVehicles,viewLayout}
   }
 </script>
 

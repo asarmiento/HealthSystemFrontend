@@ -1,12 +1,16 @@
 <template>
-  <list-Transfers/>
+  <view-layout>
+    <list-Transfers/>
+  </view-layout>
 </template>
+
 
 <script>
   import listTransfers from './../../components/Transfers/list.vue'
+  import viewLayout from './../Layout/layout.vue'
   export default {
     name: "list",
-    component:{listTransfers}
+    component:{listTransfers,viewLayout}
   }
 </script>
 
