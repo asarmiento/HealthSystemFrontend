@@ -10,7 +10,7 @@
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "edit",
-    component:{editusers,viewLayout}
+    components:{editusers,viewLayout}
   }
 </script>
 

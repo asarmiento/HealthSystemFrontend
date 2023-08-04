@@ -9,7 +9,7 @@
   import viewLayout from './../Layout/layout.vue'
   export default {
     name: "create",
-    component:{editHospital,viewLayout}
+    components:{editHospital,viewLayout}
   }
 </script>
 

@@ -10,7 +10,7 @@
     import viewLayout from './../Layout/layout.vue'
     export default {
       name: "create",
-      component:{createvehicles,viewLayout}
+      components:{createvehicles,viewLayout}
     }
   </script>
   
