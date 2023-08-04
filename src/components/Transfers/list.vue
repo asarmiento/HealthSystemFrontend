@@ -1,30 +1,43 @@
 <template>
-    <table id="tablaTransfers" class="display">
+    <table id="tablaUsers" class="display table dataTable">
         <thead>
         <tr>
-            <th>Fecha</th>
-            <th>Origen</th>
-            <th>Destino</th>
-            <th>Camilla</th>
-            <th>Compañia</th>
-            <th>Id del paciente</th>
-            <th>idetificacion del conductor</th>
-            <th>idetificacion del vehículo</th>
-       </tr>
+            <th>Nombre</th>
+            <th>Email</th>
+        </tr>
         </thead>
+        <tbody>
+        <tr v-for="transfers in dataTrasnfers">
+            <td>{{transfers.name}}</td>
+            <td>{{transfers.email}}</td>
+        </tr>
+        </tbody>
     </table>
 </template>
 
 <script>
     export default {
         name: "list",
+        data(){
+            return{:
+                dataTransfers
+            }
+        },[]
         mounted(){
           this.table()
+          this.getDataUsers()
+            this.$store.dispatch('tryTransfersAction')
+            this.dataUsers = this.$store.getters.listUsersGetters
+            console.log(this.dataUsers)
         },
         methods:{
+
+            getDataUsers(){
+              this.$store.dispatch('getUsersAction')
+            },
             table(){
                 this.$nextTick(() => {
-                    $('#tablaTransfers').dataTable({
+                    $('#tablaUsers').dataTable({
                         "order": [[ 0, "desc" ]],
                         responsive: true,
                         dom: '<"table-buttons"B>flrt<bottam>ip',
@@ -45,9 +58,9 @@
                             "search": "Buscar",
                             searchPlaceholder: "Buscar aquí",
                             "zeroRecords": "No se encontraron resultados",
-                            "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                            "info": "Mostrando _START_ a _END_ de _TOTAL_ Transferencias",
                             "infoEmpty": "No records available",
-                            "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+                            "infoFiltered": "(filtrado de un total de _MAX_ Trasnferencias)",
                             "loadingRecords": "Cargando...",
                             "paginate": {
                                 "first": "Primero",

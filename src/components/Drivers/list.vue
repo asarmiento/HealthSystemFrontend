@@ -1,24 +1,40 @@
 <template>
-    <table id="tablaDrivers" class="display">
+    <table id="tablaDrivers" class="display table dataTable">
         <thead>
         <tr>
-            <th>Cédula</th>
             <th>Nombre</th>
-            <th>Teléfono</th>
             <th>Email</th>
-            <th>Hospital</th>
         </tr>
         </thead>
+        <tbody>
+        <tr v-for="user in dataDrivers">
+            <td>{{driver.name}}</td>
+            <td>{{driver.email}}</td>
+        </tr>
+        </tbody>
     </table>
 </template>
 
 <script>
     export default {
         name: "list",
+        data(){
+            return{:
+                dataUsers
+            }
+        },[]
         mounted(){
           this.table()
+          this.getDataUsers()
+            this.$store.dispatch('tryDriversAction')
+            this.dataUsers = this.$store.getters.listDriversGetters
+            console.log(this.dataDrivers)
         },
         methods:{
+
+            getDataDrivers(){
+              this.$store.dispatch('getDriversAction')
+            },
             table(){
                 this.$nextTick(() => {
                     $('#tablaDrivers').dataTable({
@@ -27,11 +43,11 @@
                         dom: '<"table-buttons"B>flrt<bottam>ip',
                         buttons: [
                             {
-                                text: 'Registrar Conductor',
+                                text: 'Registrar Condiutores',
                                 action: function ( dt ) {
-                                    document.location = '/registrar-conductores'
+                                    document.location = '/registrar-Conductores'
                                 },
-                                "titleAttr":"Registrar Conductor",
+                                "titleAttr":"Registrar Conductores",
                                 "className": "btn btn-primary ml-5"
                             }
                         ],
