@@ -7,7 +7,7 @@
 
 <script>
   import editTransfers from './../../components/Transfers/edit.vue'
-  import viewLayout from './../Laoyut/layout.vue'
+  import viewLayout from './../Layout/layout.vue'
   export default {
     name: "create",
     components:{editTransfers,viewLayout}
