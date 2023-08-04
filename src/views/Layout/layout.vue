@@ -4,6 +4,8 @@
             <section id="logo-page"></section>
             <section id="banner"><h1>Control de traslados C.C.S.S.</h1></section>
 
+            <section id="logo-csss">
+                </section>
         </header>
         <nav class="navbar" >
             <ul>
@@ -36,6 +38,8 @@
     }
 </script>
 
-<style scoped>
 
+<style lang="scss" scoped>
+
+    @import "./../../assets/style.scss";
 </style>

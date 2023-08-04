@@ -131,7 +131,7 @@ const router = createRouter({
       path: '/Lista-de-pacientes',
       name: 'Patients',
       component: PatientsList,
-      meta: {requiresAuth: true, sitemap:true}
+      meta: {requiresAuth: false, sitemap:true}
     },
     {
       path: '/editar/:id/pacientes',
