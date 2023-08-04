@@ -1,4 +1,4 @@
-<<template>
+<template>
     <table id="tablaVehicles" class="display">
         <thead>
         <tr>
