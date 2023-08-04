@@ -1,13 +1,15 @@
 <template>
-<create-hospital />
+  <view-layout>
+    <create-hospital />
+  </view-layout>
 </template>
 
 <script>
   import createHospital from './../../components/hospitals/create.vue';
-  
+  import viewLayout from './../Layout/layout.vue'
   export default {
     name: "create",
-    components:{createHospital}
+    components:{createHospital,viewLayout}
   }
 </script>
 

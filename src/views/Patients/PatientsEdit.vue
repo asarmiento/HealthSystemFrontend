@@ -1,12 +1,15 @@
 <template>
-  <edit-Patients/>
+  <view-layout>
+    <edit-Patients/>
+  </view-layout>
 </template>
 
 <script>
   import editPatients from './../../components/patients/edit.vue'
+  import viewLayout from './../Layout/layout.vue'
   export default {
     name: "create",
-    component:{editPatients}
+    component:{editPatients,viewLayout}
   }
 </script>
 
