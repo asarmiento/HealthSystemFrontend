@@ -5,4 +5,3 @@ listHospitalsGetters(state){
 }
 
 }
-
